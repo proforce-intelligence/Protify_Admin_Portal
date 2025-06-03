@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HomeLogin from "../../../../public/HomeImage.png";
+import HomeLogin from "../../../../src/assets/HomeImage.png";
 import Styles from "./loginAdmin.module.css";
 import { useLogin } from "../../../Hooks/useLogin";
 import type { AxiosError } from "axios";

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import HomeLogin from "../../../../public/HomeImage.png";
+import HomeLogin from "../../../../src/assets/HomeImage.png";
 import Styles from "./loginAdmin.module.css";
 import { useLogin } from "../../../Hooks/SuperAdminsLogin";
 import type { AxiosError } from "axios";

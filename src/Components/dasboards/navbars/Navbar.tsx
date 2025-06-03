@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../../../../public/Logo.png";
-import Profile from "../../../../public/profie.png";
+import Logo from "../../../../src/assets/Logo.png";
+import Profile from "../../../../src/assets/profie.png";
 import styles from './Navbar.module.css';
 
 
