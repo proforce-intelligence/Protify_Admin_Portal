@@ -1,0 +1,39 @@
+# --- Dependencies ---
+node_modules/
+.pnp
+.pnp.js
+
+# --- Build & Cache ---
+/dist/
+/.next/
+/out/
+/build/
+.serverless/
+.turbo/
+.cache/
+
+# --- Environment Files ---
+.env*.local
+.env
+.env.development
+.env.production
+.env.test
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Logs & Temp Files ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.tmp
+
+# --- OS & Editor Files ---
+.DS_Store
+Thumbs.db
+.parcel-cache/

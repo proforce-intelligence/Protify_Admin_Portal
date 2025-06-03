@@ -1,0 +1,155 @@
+.auditLogs {
+  padding: 1rem;
+  overflow-x: auto;
+   background-color: #f3f4f6;
+}
+
+.auditlogchild{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.795);
+}
+
+.auditLogH2{
+  color: #333;
+}
+
+.auditlogchild2{
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.795);
+}
+
+.auditLogH4{
+  color: #333;
+}
+
+.auditLogSelect{
+  width: 200px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f3f4f6;
+}
+
+.auditLogoButton{  
+  width: 100px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.filterSection{
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.icon {
+  color: #6b7280;
+  margin-right: 0.5rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.95rem;
+  width: 100%;
+  color: #111827;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.thead {
+    background-color: #a0aec0
+}
+
+.th,
+.td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.795);
+}
+
+
+.exportDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.exportButton {
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  background-color: #0a0e1a;
+  border: 1px solid #0a0e1a;
+}
+
+.exportMenu {
+  display: none;
+   z-index: 1;
+  min-width: 100px;
+    border-radius: 4px;
+  position: absolute;
+  background-color: #f3f4f6;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+   border-bottom: 1px solid rgba(245, 245, 245, 0.795);
+}
+
+.exportMenu.show {
+  display: block;
+}
+
+.exportItem {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.exportItem:hover {
+  background-color: #0a0e1a;
+  border: 1px solid #0a0e1a;
+}
+

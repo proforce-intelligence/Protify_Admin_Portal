@@ -1,0 +1,107 @@
+.navbarContainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  z-index: 10; 
+  max-width: 100%;
+  position: relative;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: #0a0e1a;
+  justify-content: space-between;
+  border-bottom: 1px solid #0a0e1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoImage {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: rgba(245, 245, 245, 0.952);
+}
+
+.profileSection {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: rgba(245, 245, 245, 0.952);
+}
+
+.role {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burgerBar {
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .burger {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .profileSection {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+}

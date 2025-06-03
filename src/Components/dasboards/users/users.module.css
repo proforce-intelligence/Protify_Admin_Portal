@@ -1,0 +1,247 @@
+.usersContainer {
+  padding: 1rem;
+  background-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header { 
+   gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+   justify-content: space-between;
+}
+
+.auditlogchild{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.795);
+}
+
+.auditLogH2{
+  color: #333;
+}
+
+.auditlogchild22{
+  gap: 10px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.795);
+}
+
+.auditLogH4{
+  color: #333;
+}
+
+.filters select {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  margin-right: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.icon {
+  color: #6b7280;
+  margin-right: 0.5rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.95rem;
+  width: 100%;
+  color: #111827;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.inviteBtn {
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+   border-bottom: 1px solid #2d3748;
+  background: linear-gradient(135deg, #1a1d29 0%, #0f1419 100%);
+}
+
+.inviteBtn:hover {
+ border-bottom: 1px solid #2d3748;
+  background: linear-gradient(135deg, #1a1d29 0%, #0f1419 100%);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.userTable thead {
+  color: #f3f4f6;
+   background: linear-gradient(135deg, #1a1d29 0%, #0f1419 100%);
+}
+
+.userTable th,
+.userTable td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.status {
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.active {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.inactive {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+
+
+
+.adminRole {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.actionIcon {
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modalActions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.suspendBtn {
+  background-color: #dc2626;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.activateBtn {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.closeModal {
+  margin-top: 1rem;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters,
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filters select,
+  .inviteBtn,
+  .searchBox {
+    width: 100%;
+  }
+
+  .searchBox input {
+    width: 100%;
+  }
+
+  .userTable {
+    font-size: 0.85rem;
+  }
+}
